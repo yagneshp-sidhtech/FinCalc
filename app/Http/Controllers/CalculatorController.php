@@ -40,4 +40,14 @@ class CalculatorController extends Controller
     {
         return view('admin.calculator.compare-loan');
     }
+
+    public function emi()
+    {
+        return view('admin.calculator.emi-calculator.emi');
+    }
+
+    public function loanAmount()
+    {
+        return view('admin.calculator.emi-calculator.loan-amount');
+    }
 }

@@ -21,6 +21,10 @@ Route::get('/gst-calculator', [CalculatorController::class, 'gstCalculator'])->n
 
 Route::get('/compare-loan', [CalculatorController::class, 'compareLoan'])->name('compare.loan');
 
+Route::get('/emi-calculator/emi', [CalculatorController::class, 'emi'])->name('emi.calculator.emi');
+
+Route::get('/emi-calculator/loan-amount', [CalculatorController::class, 'loanAmount'])->name('emi.calculator.loan.amount');
+
 Route::prefix('admin')->name('admin.')->group(function () {
     Route::get('login', [AdminAuthController::class, 'login'])->name('login');
     Route::post('/dologin', [AdminAuthController::class, 'dologin'])->name('dologin');

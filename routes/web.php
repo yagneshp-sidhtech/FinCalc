@@ -15,6 +15,12 @@ Route::get('/sip-calculator', [CalculatorController::class, 'sipCalculator'])->n
 
 Route::get('/rd-calculator', [CalculatorController::class, 'rdCalculator'])->name('rd.calculator');
 
+Route::get('/ppf-calculator', [CalculatorController::class, 'ppfCalculator'])->name('ppf.calculator');
+
+Route::get('/gst-calculator', [CalculatorController::class, 'gstCalculator'])->name('gst.calculator');
+
+Route::get('/compare-loan', [CalculatorController::class, 'compareLoan'])->name('compare.loan');
+
 Route::prefix('admin')->name('admin.')->group(function () {
     Route::get('login', [AdminAuthController::class, 'login'])->name('login');
     Route::post('/dologin', [AdminAuthController::class, 'dologin'])->name('dologin');

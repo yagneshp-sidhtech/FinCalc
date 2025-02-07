@@ -25,4 +25,19 @@ class CalculatorController extends Controller
     {
         return view('admin.calculator.rd-calculator');
     }
+
+    public function ppfCalculator()
+    {
+        return view('admin.calculator.ppf-calculator');
+    }
+
+    public function gstCalculator()
+    {
+        return view('admin.calculator.gst-calculator');
+    }
+
+    public function compareLoan()
+    {
+        return view('admin.calculator.compare-loan');
+    }
 }

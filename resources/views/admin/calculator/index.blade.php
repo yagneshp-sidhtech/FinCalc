@@ -30,6 +30,9 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item">
+                            <a class="nav-link" href="{{ route('compare.loan') }}">Compare Loans</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="{{ route('fd.calculator') }}">FD Calculator</a>
                         </li>
                         <li class="nav-item">
@@ -42,10 +45,10 @@
                             <a class="nav-link" href="#">Currency Converter</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">GST Calculator</a>
+                            <a class="nav-link" href="{{ route('gst.calculator') }}">GST Calculator</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">PPF Calculator</a>
+                            <a class="nav-link" href="{{ route('ppf.calculator') }}">PPF Calculator</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">ATM Finder</a>
